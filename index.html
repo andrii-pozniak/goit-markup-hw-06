@@ -64,7 +64,13 @@
                         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                         <form action="">
                             <label class="hero-name">Имя
-                                <input type="name" name="name" class="hero-input">
+                                <div class="cotainer-icon">
+                                    <svg class="modal-svg">
+                                        <use href="./img/logo company/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <input type="name" name="name" class="hero-input">
+                                    
+                                </div>
                             </label>                               
                             <label class="hero-name">Телефон
                                 <input type="tel" name="tel" class="hero-input">
@@ -76,7 +82,8 @@
                                 <input type="coment" name="coment" class="coment-input" placeholder="Введите текст">
                             </label> 
                             <label class="checkbox-label">
-                                <input class="hero-checkbox" type="checkbox" name="checkbox" value="topic">Соглашаюсь с рассылкой и принимаю Условия договора
+                                <input class="hero-checkbox" type="checkbox" name="checkbox" value="topic">
+                                <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю <span> <a href="" class="modal-item">  Условия договора</a></span>
                             </label>  
                             <button type="submit" class="modal-submit">Отправить</button>                       
 

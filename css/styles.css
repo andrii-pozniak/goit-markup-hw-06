@@ -212,7 +212,7 @@ font-family: Roboto, sans-serif;
 }    
 .hero-modal {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     padding: 40px;
 
@@ -304,7 +304,11 @@ font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     color: var(--title-color);
 }
+.cotainer-icon {
+    position: relative;
+}
 .hero-name {
+    
     display: flex;
     flex-wrap: wrap;
    margin-bottom: 4px;
@@ -316,6 +320,7 @@ font-family: Roboto, sans-serif;
     color: var(--primery-text-color);
 }
 .hero-input {
+    
     display: flex;
     width: 448px;
     height: 40px;
@@ -337,14 +342,40 @@ font-family: Roboto, sans-serif;
     align-items: center;
     margin-bottom: 20px;
     
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71px;      
     letter-spacing: 0.03em;
+
     color: var(--primery-text-color);
+    
 }
 .hero-checkbox {
+    width: 1px;
+    height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   overflow: hidden;   
+
+}
+.checkbox-icon {
+    width: 15px;
+    height: 16px;
     margin-right: 7px;
+    
+    border: 1px solid var(--title-color);
+    border-radius: 2px;
+}
+.hero-checkbox:checked + .checkbox-icon {
+    display: inline;
+    background-color: var(--acsent-color);
+    background-image: url(../img/check.svg);
+    border: 0;    
+}
+.modal-item {
+    color: var(--acsent-color);
 }
 .modal-submit {
     width: 200px;
@@ -356,6 +387,24 @@ font-family: Roboto, sans-serif;
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+.modal-svg {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    border: 2px black;
+
+    fill: var(--title-color);
+}
+.icon-svg {
+   
+    width: 18px;
+    height: 18px;
+    border: 2px black;
+
+    fill: var(--title-color);
 }
 
 /* section features */
