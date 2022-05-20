@@ -212,11 +212,10 @@ font-family: Roboto, sans-serif;
 }    
 .hero-modal {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
+
     transform: translate(-50%, -50%);
 
     width: 528px;
@@ -295,8 +294,19 @@ font-family: Roboto, sans-serif;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
+.modal-title {
+    margin-bottom: 12px;
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
 .hero-name {
     display: flex;
+    flex-wrap: wrap;
    margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -306,6 +316,7 @@ font-family: Roboto, sans-serif;
     color: var(--primery-text-color);
 }
 .hero-input {
+    display: flex;
     width: 448px;
     height: 40px;
     margin-bottom: 10px;
@@ -316,10 +327,35 @@ font-family: Roboto, sans-serif;
 .coment-input {
     width: 448px;
     height: 120px;
+    margin-bottom: 20px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;      
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+}
+.hero-checkbox {
+    margin-right: 7px;
+}
+.modal-submit {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    
 
+    background-color: var(--acsent-color);
+    color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* section features */
