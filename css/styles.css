@@ -304,9 +304,10 @@ font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     color: var(--title-color);
 }
-.cotainer-icon {
+.cotainer-icon, .container-tel, .contain-mail {
     position: relative;
 }
+
 .hero-name {
     
     display: flex;
@@ -319,15 +320,27 @@ font-family: Roboto, sans-serif;
 
     color: var(--primery-text-color);
 }
-.hero-input {
-    
+.hero-input {    
     display: flex;
     width: 448px;
     height: 40px;
     margin-bottom: 10px;
+    padding-left: 42px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+.hero-input:focus {
+    fill: var(--acsent-color);
+    border: 1px solid var(--acsent-color);
+   
+    
+   
+}
+
+.modal-svg:focus,
+.modal-svg:hover {
+fill: var(--acsent-color);
 }
 .coment-input {
     width: 448px;
@@ -340,16 +353,14 @@ font-family: Roboto, sans-serif;
 .checkbox-label {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;    
     
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71px;      
     letter-spacing: 0.03em;
 
-    color: var(--primery-text-color);
-    
+    color: var(--primery-text-color);    
 }
 .hero-checkbox {
     width: 1px;
@@ -358,7 +369,6 @@ font-family: Roboto, sans-serif;
    border: 0;
    padding: 0;
    overflow: hidden;   
-
 }
 .checkbox-icon {
     width: 15px;
@@ -382,7 +392,6 @@ font-family: Roboto, sans-serif;
     height: 50px;
     border: 0;
     
-
     background-color: var(--acsent-color);
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -392,19 +401,34 @@ font-family: Roboto, sans-serif;
     position: absolute;
     top: 14px;
     left: 15px;
+    
     width: 18px;
     height: 18px;
     border: 2px black;
 
     fill: var(--title-color);
 }
-.icon-svg {
-   
+.icon-svg {   
     width: 18px;
     height: 18px;
     border: 2px black;
 
     fill: var(--title-color);
+}
+.modal-coment {
+    width: 448px;
+    height: 120px;   
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 /* section features */

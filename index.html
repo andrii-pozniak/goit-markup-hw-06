@@ -66,20 +66,32 @@
                             <label class="hero-name">Имя
                                 <div class="cotainer-icon">
                                     <svg class="modal-svg">
-                                        <use href="./img/logo company/sprite.svg#icon-phone"></use>
+                                        <use href="./img/logo company/sprite.svg#icon-person"></use>
                                     </svg>
                                     <input type="name" name="name" class="hero-input">
                                     
                                 </div>
                             </label>                               
                             <label class="hero-name">Телефон
-                                <input type="tel" name="tel" class="hero-input">
+                                <div class="container-tel">
+                                    <svg class="modal-svg">
+                                    <use href="./img/logo company/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <input type="tel" name="tel" class="hero-input">
+                                </div>
+                                
                             </label>                            
                             <label class="hero-name">Почта
-                                <input type="email" name="mail" class="hero-input">
+                                <div class="contain-mail">
+                                    <svg class="modal-svg">
+                                        <use href="./img/logo company/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <input type="email" name="mail" class="hero-input">
+                                </div>
+                                
                             </label>                            
-                            <label class="hero-name">Комментарий
-                                <input type="coment" name="coment" class="coment-input" placeholder="Введите текст">
+                            <label class="hero-name" for="coment">Комментарий
+                                <textarea name="coment" id="coment" cols="30" rows="10" class="modal-coment" placeholder="Введите текст"></textarea>
                             </label> 
                             <label class="checkbox-label">
                                 <input class="hero-checkbox" type="checkbox" name="checkbox" value="topic">
