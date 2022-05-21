@@ -227,6 +227,8 @@ font-family: Roboto, sans-serif;
 }
 .hero-button {
     position: absolute;
+    display: flex;
+    align-items: center;
     width: 30px;
     height: 30px;
     top: 8px;
@@ -234,14 +236,15 @@ font-family: Roboto, sans-serif;
     border-radius: 50%;
     transition: background-color 250ms var(--timing-function);  
 
+    background: var(--white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.hero-button:hover, .hero-button:focus {
-    background-color: rgba(0, 0, 0, 0.2);
+.hero-button:hover, .hero-button:focus {    
+    fill: var(--acsent-color);
 }     
 .hero-svg {
-    width: 11px;
-    height: 11px;
+    width: 18px;
+    height: 18px;
 }
 .img-button {
     display: block;
@@ -307,9 +310,7 @@ font-family: Roboto, sans-serif;
 .cotainer-icon, .container-tel, .contain-mail {
     position: relative;
 }
-
-.hero-name {
-    
+.hero-name {    
     display: flex;
     flex-wrap: wrap;
    margin-bottom: 4px;
@@ -326,21 +327,15 @@ font-family: Roboto, sans-serif;
     height: 40px;
     margin-bottom: 10px;
     padding-left: 42px;
+    outline: none;
+    transition: border 250ms var(--timing-function);
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-.hero-input:focus {
-    fill: var(--acsent-color);
+.hero-input:focus,
+.hero-input:hover {
     border: 1px solid var(--acsent-color);
-   
-    
-   
-}
-
-.modal-svg:focus,
-.modal-svg:hover {
-fill: var(--acsent-color);
 }
 .coment-input {
     width: 448px;
@@ -368,6 +363,7 @@ fill: var(--acsent-color);
    margin: -1px;
    border: 0;
    padding: 0;
+   transition: background-color 2050ms var(--timing-function), background-image 2050ms var(--timing-function);
    overflow: hidden;   
 }
 .checkbox-icon {
@@ -375,7 +371,7 @@ fill: var(--acsent-color);
     height: 16px;
     margin-right: 7px;
     
-    border: 1px solid var(--title-color);
+    border: 2px solid var(--title-color);
     border-radius: 2px;
 }
 .hero-checkbox:checked + .checkbox-icon {
@@ -399,14 +395,19 @@ fill: var(--acsent-color);
 }
 .modal-svg {
     position: absolute;
+    display: flex;
     top: 14px;
     left: 15px;
     
     width: 18px;
     height: 18px;
     border: 2px black;
+    transition: fill 250ms var(--timing-function);
 
     fill: var(--title-color);
+}
+.hero-input:focus+.modal-svg {
+    fill: var(--acsent-color);
 }
 .icon-svg {   
     width: 18px;
@@ -416,15 +417,20 @@ fill: var(--acsent-color);
     fill: var(--title-color);
 }
 .modal-coment {
+    resize: none;
     width: 448px;
     height: 120px;   
     font-weight: 400;
     margin-bottom: 20px;
     padding: 12px 16px;
 
-    font-size: 14px;
-    line-height: 1.2;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.15;
     letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+    
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
