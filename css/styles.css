@@ -363,8 +363,9 @@ font-family: Roboto, sans-serif;
    margin: -1px;
    border: 0;
    padding: 0;
-   transition: background-color 2050ms var(--timing-function), background-image 2050ms var(--timing-function);
-   overflow: hidden;   
+    transition: border 250ms var(--timing-function);
+   overflow: hidden; 
+    
 }
 .checkbox-icon {
     width: 15px;
@@ -423,18 +424,22 @@ font-family: Roboto, sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
     padding: 12px 16px;
+    outline: none;
+    
 
     font-weight: 400;
     font-size: 12px;
     line-height: 1.15;
     letter-spacing: 0.01em;
-    
-    color: rgba(117, 117, 117, 0.5);
-    
-    
+         
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     color: rgba(117, 117, 117, 0.5);
+}
+.modal-coment:hover,
+.modal-coment:focus {
+    border-color: var(--acsent-color);
+    color: var(--title-color);
 }
 
 /* section features */
