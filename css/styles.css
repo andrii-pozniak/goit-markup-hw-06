@@ -268,7 +268,7 @@ font-family: Roboto, sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
-   .hide {
+.hide {
   visibility: hidden;
   margin-top: 0;
   margin-bottom: 0;  
@@ -298,6 +298,7 @@ font-family: Roboto, sans-serif;
     border-radius: 4px;
 }
 .modal-title {
+    margin-top: 0;
     margin-bottom: 12px;
     
     font-weight: 700;
@@ -309,11 +310,11 @@ font-family: Roboto, sans-serif;
 }
 .cotainer-icon, .container-tel, .contain-mail {
     position: relative;
+    margin-bottom: 10px;
 }
 .hero-name {    
     display: flex;
-    flex-wrap: wrap;
-   margin-bottom: 4px;
+    flex-wrap: wrap;   
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
@@ -324,8 +325,7 @@ font-family: Roboto, sans-serif;
 .hero-input {    
     display: flex;
     width: 448px;
-    height: 40px;
-    margin-bottom: 10px;
+    height: 40px;    
     padding-left: 42px;
     outline: none;
     transition: border 250ms var(--timing-function);
@@ -347,6 +347,7 @@ font-family: Roboto, sans-serif;
 }
 .checkbox-label {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;    
     
@@ -385,6 +386,11 @@ font-family: Roboto, sans-serif;
     color: var(--acsent-color);
 }
 .modal-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 50px;
     border: 0;
@@ -450,7 +456,7 @@ font-family: Roboto, sans-serif;
 .features-container {
     display: flex;
     flex-wrap: wrap;
-   }
+}
    .features-a {     
      width: 270px;
      height: 120px;
@@ -460,7 +466,7 @@ font-family: Roboto, sans-serif;
      margin-bottom: 30px;
      background: var(--background-color);
      border-radius: 4px; 
-   }
+}
 .features-icon {   
    width: 70px;
    height: 120px;
@@ -962,7 +968,8 @@ font-family: Roboto, sans-serif;
 .photo-a {
    position: relative;
     display: block;
-    text-decoration: none;  
+    text-decoration: none;
+    transition: box-shadow 250ms var(--timing-function);  
 }
 .photo-a:hover, .photo-a:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
