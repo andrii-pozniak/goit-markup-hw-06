@@ -198,7 +198,7 @@ font-family: Roboto, sans-serif;
     top: 0;
     left: 0;
     opacity: 1;
-    transition: opasity 250ms var(--timing-function);   
+    transition: opasity 250ms var(--timing-function);
 
     width: 100%;
     height: 1024px;   
@@ -207,7 +207,7 @@ font-family: Roboto, sans-serif;
 }
 .hero-backdrop.is-hidden{
     opacity: 0;
-    transition: opacity 250ms var(--timing-function);
+   
     pointer-events: none;
 }    
 .hero-modal {
@@ -215,6 +215,7 @@ font-family: Roboto, sans-serif;
     top: 30%;
     left: 50%;
     padding: 40px;
+    transition: opasity 10050ms var(--timing-function);
 
     transform: translate(-50%, -50%);
 
@@ -314,7 +315,8 @@ font-family: Roboto, sans-serif;
 }
 .hero-name {    
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;  
+    margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
@@ -322,6 +324,7 @@ font-family: Roboto, sans-serif;
 
     color: var(--primery-text-color);
 }
+
 .hero-input {    
     display: flex;
     width: 448px;
@@ -349,9 +352,8 @@ font-family: Roboto, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;    
-    
-    font-weight: 400;
+    margin: 20px 0;    
+        
     font-size: 14px;
     line-height: 1.71px;      
     letter-spacing: 0.03em;
@@ -359,22 +361,28 @@ font-family: Roboto, sans-serif;
     color: var(--primery-text-color);    
 }
 .hero-checkbox {
+    position: absolute;
     width: 1px;
     height: 1px;
    margin: -1px;
    border: 0;
    padding: 0;
+   clip: rect(0 0 0 0);
     transition: border 250ms var(--timing-function);
    overflow: hidden; 
     
 }
 .checkbox-icon {
+    display: flex;
     width: 15px;
     height: 16px;
     margin-right: 7px;
     
     border: 2px solid var(--title-color);
     border-radius: 2px;
+}
+.hero-checkbox:focus + .checkbox-icon {
+    border: 1px solid var(--acsent-color);
 }
 .hero-checkbox:checked + .checkbox-icon {
     display: inline;
@@ -428,7 +436,7 @@ font-family: Roboto, sans-serif;
     width: 448px;
     height: 120px;   
     font-weight: 400;
-    margin-bottom: 20px;
+   
     padding: 12px 16px;
     outline: none;
     
@@ -1037,5 +1045,8 @@ font-family: Roboto, sans-serif;
 }
 
 .container-ovelay:hover .text-overlay {
+    transform: translateY(0);
+}
+.photo-a:focus .text-overlay {
     transform: translateY(0);
 }
