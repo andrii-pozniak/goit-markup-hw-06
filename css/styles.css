@@ -198,7 +198,7 @@ font-family: Roboto, sans-serif;
     top: 50%;
     left: 50%;
     opacity: 1;
-    transition: opasity 250ms var(--timing-function);
+    transition: opacity 250ms var(--timing-function);
 
     width: 100%;
     height: 100%; 
@@ -215,9 +215,7 @@ font-family: Roboto, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
-
-    padding: 40px;
-    transition: opacity 10050ms var(--timing-function);
+    padding: 40px;   
 
     transform: translate(-50%, -50%);
 
